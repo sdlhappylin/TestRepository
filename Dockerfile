@@ -1,4 +1,4 @@
-FROM oracle-serverjre-8
+FROM store/oracle/serverjre:8
 MAINTAINER prophetcraft
 
 VOLUME ["/data"]
