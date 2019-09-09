@@ -1,10 +1,11 @@
 FROM store/oracle/serverjre:8
 MAINTAINER prophetcraft
 
-RUN mkdir /data
-COPY run.sh /data/run.sh
+RUN mkdir /minecraft
+WORKDIR /minecraft
+COPY ./run.sh /minecraft/
 
-VOLUME /data
+VOLUME /minecraft
 EXPOSE 25565:25565
 
-CMD sh /data/run.sh
+CMD sh /minecraft/run.sh
