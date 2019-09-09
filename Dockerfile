@@ -3,7 +3,7 @@ MAINTAINER prophetcraft
 
 RUN mkdir /minecraft
 WORKDIR /minecraft
-COPY ./run.sh /minecraft/
+COPY run.sh /minecraft/
 
 VOLUME /minecraft
 EXPOSE 25565:25565
